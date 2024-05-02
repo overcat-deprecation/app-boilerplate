@@ -30,6 +30,7 @@
 parser_status_e transaction_deserialize(buffer_t *buf, transaction_t *tx) {
     LEDGER_ASSERT(buf != NULL, "NULL buf");
     LEDGER_ASSERT(tx != NULL, "NULL tx");
+    // debug
 
     if (buf->size > MAX_TX_LEN) {
         return WRONG_LENGTH_ERROR;
