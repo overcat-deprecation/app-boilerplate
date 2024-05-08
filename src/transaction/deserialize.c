@@ -36,7 +36,8 @@ parser_status_e transaction_deserialize(buffer_t *buf, transaction_t *tx) {
         return WRONG_LENGTH_ERROR;
     }
 
-    // nonce
+
+    // nonce1
     if (!buffer_read_u64(buf, &tx->nonce, BE)) {
         return NONCE_PARSING_ERROR;
     }

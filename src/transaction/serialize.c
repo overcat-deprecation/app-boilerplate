@@ -32,6 +32,7 @@
 #include "ledger_assert.h"
 #endif
 
+// 1
 int transaction_serialize(const transaction_t *tx, uint8_t *out, size_t out_len) {
     size_t offset = 0;
 
